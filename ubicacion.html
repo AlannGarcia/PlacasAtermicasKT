@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/953976d048.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Fotos/Logos/LogoPlacas - copia.ico">
+    <link rel="stylesheet" href="styleC.css">
+    <link rel="stylesheet" href="Whatsapp/wttp.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navar" id="navbar">
+            <img src="fotos/logoplacas.jpg" class="logo">
+            <ul class="menu" id="menuu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+            <div class="toggle-btn">
+            <span>&#9776;</span>
+            </div>
+        </div>  
+        <div class="ubicacion">
+            <div class="direccion">
+                <h3>Estamos ubicados en</h3>
+                <p>La Guarda, Derqui Esquina, B1878 Quilmes</p>
+            </div>
+            <div class="mapa">
+                <iframe class="googleMap"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.5285938125166!2d-58.228371384683854!3d-34.74227507234968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f1ad0d98501%3A0xaf418bad3f5163fb!2sLa%20Guarda%201199%2C%20Ezpeleta%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636663924572!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="mail">
+                <p>placasatermicaskt@gmail.com</p>
+            </div>
+            
+        </div>     
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=1169738740&text=Hola,%20quisiera%20información%20sobre%20Placas%20At%C3%A9rmicas%20KT." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+        <script>
+            const btnToggle = document.querySelector('.toggle-btn');
+    
+            btnToggle.addEventListener('click', function () {
+            document.getElementById('menuu').classList.toggle('active');
+            })
+        </script>
+</body>
+</html>

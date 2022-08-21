@@ -1,0 +1,157 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(Fotos/Pile1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    margin-left: 20px;
+}
+.navar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    padding-right: 80px;
+
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.navar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    Transition-duration: 0.8s;
+}
+
+.navar ul li a:hover {
+    color: #0099ff;
+}
+.contenido{
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.titulo{
+    font-size: 70px;
+    line-height: 100px;   
+    font-weight: bold;
+
+
+    animation: backInDown; 
+    animation-duration: 1.25s;
+}
+
+.titulo span{
+    position: relative;
+    color: #0099ff;
+    right: 0%;
+    width: 0%;
+}
+
+
+
+.contenido p{
+    margin: 18px auto;
+    font-weight: 100px;
+    line-height: 40px;
+    font-family: sans-serif;
+
+    animation: backInLeft;
+    animation-duration: 2s;
+}
+
+.toggle-btn{
+    display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .navar{
+        background-color: #0093E9;
+        background-image: linear-gradient(89deg, #0093E9 0%, #80D0C7 100%);
+        height: 6px;
+        box-shadow: 2px 2px 15px 0px rgba(120, 151, 6, 0.42);
+        align-items: center;
+    }
+    
+    .navar .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 74px;
+        background-color: #0093E9;
+        background-image: linear-gradient(89deg, #0093E9 0%, #80D0C7 100%);
+        height: 100vh;     
+        margin-top: -4px;
+        transform: translateX(-130%);
+        transition: all 1.2s;
+        z-index: 1;
+    }
+    .logo{
+        width: 200px;
+    }
+
+    #menuu.active{
+        transform: translateX(0%);
+
+    }
+
+    #menuu li{
+        margin-top: 3.5em;
+    }
+
+    .navar .toggle-btn{
+       display: block;
+       font-size: 30px;
+       font-weight: 700;
+       color: rgb(0, 0, 0);
+       cursor: pointer;
+       padding-right: 10px;
+   }
+   .titulo{
+       font-size: 50px;
+   }
+    .contenido{
+        font-size:15px;
+    }
+    .contenido p{
+        padding-top: 30px;
+        margin: 0% 2%; 
+    }
+    
+   .titulo span{
+       font-size: 50px;
+   }   
+   .ubicacion h3{
+    font-size: 20px;
+    }
+    .ubicacion{
+        font-size: 14px;
+        margin-top: 99%;
+        margin-left: 4%;
+    }
+}
